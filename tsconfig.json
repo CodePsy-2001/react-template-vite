@@ -1,8 +1,6 @@
 {
   "include": [
     "src",
-    "node_modules/@sendbird/uikit-react/index.d.ts",
-    "node_modules/@sendbird/src/**/*.jsx",
     "**/*.ts",
     "**/*.tsx"
   ],
