@@ -19,11 +19,12 @@
     }
   },
   "rules": {
-    "indent": ["error", 2],
+    "indent": ["off"],
     "max-len": ["warn", {"code": 140}],
     "camelcase": ["off"],
     "no-unused-vars": ["off"],
     "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/indent": ["error", 2],
     "import/no-unresolved": ["off"],
     "import/prefer-default-export": ["off"],
     "import/extensions": [
@@ -50,7 +51,13 @@
     ],
     "react/prop-types": ["off"],
     "react/jsx-one-expression-per-line": ["off"],
-    "react/jsx-props-no-spreading": ["warn"],
+    "react/jsx-props-no-spreading": [
+      "warn",
+      {
+        "html": "ignore",
+        "explicitSpread": "ignore"
+      }
+    ],
     "react/no-unescaped-entities": ["warn"],
     "jsx-a11y/label-has-associated-control": ["warn"],
     "no-param-reassign": ["warn"],
