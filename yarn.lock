@@ -523,10 +523,62 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@remix-run/router@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@remix-run/router@npm:1.0.3"
+  checksum: 7e535f3c24bf6b0a48aff3de70ee74e5402fe93105aa9bd01f275d5d8f5a9a8a7cadec08d18cf5544d4f24bc9d7a091abc1c9d4ea8efb2893e9077f104a51459
+  languageName: node
+  linkType: hard
+
 "@sinclair/typebox@npm:^0.24.1":
   version: 0.24.51
   resolution: "@sinclair/typebox@npm:0.24.51"
   checksum: fd0d855e748ef767eb19da1a60ed0ab928e91e0f358c1dd198d600762c0015440b15755e96d1176e2a0db7e09c6a64ed487828ee10dd0c3e22f61eb09c478cd0
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-core@npm:4.15.1":
+  version: 4.15.1
+  resolution: "@tanstack/query-core@npm:4.15.1"
+  checksum: ee98e75a3770fd35a6a10b9e7b3c417ea9da2b072481b5191d759182b29fd7bc4e8e340f83e2961b46fe4e1adac356087df04d4661c9459d09ff4d0574f683eb
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^4.16.1":
+  version: 4.16.1
+  resolution: "@tanstack/react-query@npm:4.16.1"
+  dependencies:
+    "@tanstack/query-core": 4.15.1
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-native: "*"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 2c2d4c5c8bab2cd978ddd42153d33f844bd24a17ebe42f269cc64ee2a031f60f980b441640172885d9fd156fe9abc74ffc800fb68c6b6f6ef4fe48ffadafff79
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-table@npm:^8.5.27":
+  version: 8.5.27
+  resolution: "@tanstack/react-table@npm:8.5.27"
+  dependencies:
+    "@tanstack/table-core": 8.5.27
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 7b58c39ebf08381c6debb5f503e224fc82fd8c1dbbd3e92c91c39d2eed8a5510c7284d00c0ded1c4f11045c57dc7af78bd6cac9de7c1b6cf8bfb5f6838f9673f
+  languageName: node
+  linkType: hard
+
+"@tanstack/table-core@npm:8.5.27":
+  version: 8.5.27
+  resolution: "@tanstack/table-core@npm:8.5.27"
+  checksum: 83614456f8710496dbb5a483dc475ab4c203a6075a082b13cb29fdc182c6ec70f9556cc8a3761aa88f503233c33f68f2879eccca9e2d153b0e5cb5b42a4602bf
   languageName: node
   linkType: hard
 
@@ -3236,10 +3288,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-router-dom@npm:^6.4.3":
+  version: 6.4.3
+  resolution: "react-router-dom@npm:6.4.3"
+  dependencies:
+    "@remix-run/router": 1.0.3
+    react-router: 6.4.3
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 67a44d8dc45761a1c88793cac73839bb657168ef61b9473eb39b186b4a3ea1472454fd96f8997dc541cb1e79a723d62f9503cbc9179b63b8f1d634ed6d2b079a
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.4.3":
+  version: 6.4.3
+  resolution: "react-router@npm:6.4.3"
+  dependencies:
+    "@remix-run/router": 1.0.3
+  peerDependencies:
+    react: ">=16.8"
+  checksum: b89c0495c6837b1457915c08c5acc4eb7a2e9e3fae0420faf9bfc6311ecdfe78627cc1034c0e975bccd9aeeb70d1dcc5021322779dd3053d94c47e37339d77eb
+  languageName: node
+  linkType: hard
+
 "react-template-vite@workspace:.":
   version: 0.0.0-use.local
   resolution: "react-template-vite@workspace:."
   dependencies:
+    "@tanstack/react-query": ^4.16.1
+    "@tanstack/react-table": ^8.5.27
     "@types/jest": ^29.0.3
     "@types/node": ^18.7.18
     "@types/react": ^18.0.20
@@ -3252,6 +3330,7 @@ __metadata:
     eslint-import-resolver-typescript: ^3.5.2
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-router-dom: ^6.4.3
     sass: ^1.54.9
     typescript: ^4.8.4
     vite: ^3.1.1
@@ -3872,6 +3951,15 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
   languageName: node
   linkType: hard
 
