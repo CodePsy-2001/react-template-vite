@@ -12,6 +12,6 @@
 - sass
 
 - react-router v6
+- react-hook-form
 - @tanstack/react-query
 - @tanstack/react-table
-
